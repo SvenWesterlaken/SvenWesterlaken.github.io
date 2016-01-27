@@ -1,0 +1,163 @@
+section.design-code
+ height: 230px
+ width: 100%
+ background:
+  image: url(/img/TextureNoise.jpg)
+  size: 80px 80px
+ display: flex
+ color: white
+ box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3) inset, 0px -5px 5px 0px rgba(0,0,0,0.3) inset
+
+ ul
+  list-style: none
+
+ li
+  line-height: 25px
+  font-size: 25px
+
+ .title
+  font:
+   weight: bold
+   size: 40px
+  margin-bottom: 0px
+  display: block
+
+ .title2
+  font:
+   weight: 600
+   size: 35px
+  margin-bottom: 0px
+  line-height: 15px
+
+ .graphart
+  position: relative
+  text-transform: uppercase
+  width: 50vw
+  height: auto
+  display: inline-block
+
+ .videoedit
+  display: inline-block
+  margin: 0px 10px
+
+ .designing
+  display: inline-block
+  margin: 0px 10px
+
+ .designbrain
+  height: 100%
+  width: auto
+  opacity: 0.2
+
+  &.left
+   position: absolute
+   left: 0
+   top: 0
+
+  &.right
+   position: absolute
+   right: 0
+   top: 0
+
+ .coding
+  background: rgba(0,0,0,0.3)
+  position: relative
+  text-transform: uppercase
+  width: 50vw
+  height: auto
+  display: inline-block
+
+  li:last-child
+   color: darken(white, 60%)
+
+ .codebrain
+  height: 100%
+  width: auto
+  opacity: 0.2
+
+  &.left
+   position: absolute
+   left: 0
+   top: 0
+
+  &.right
+   position: absolute
+   right: 0
+   top: 0
+
+@media (max-width: 1340px)
+ section.design-code
+  height: 460px
+  width: 100%
+  flex-direction: column
+
+  .graphart
+   width: 100%
+   height: 230px
+
+  .coding
+   width: 100%
+   height: 230px
+
+@media (max-width: 700px)
+ section.design-code
+  height: 780px
+  flex-direction: column
+
+  .graphart
+   width: 100%
+   height: 390px
+
+  .videoedit
+   display: block
+   margin: 0px 10px
+   margin-bottom: 15px
+
+  .designing
+   display: block
+   margin: 0px 10px
+
+  .coding
+   width: 100%
+   height: 390px
+
+@media (max-width: 680px)
+ section.design-code
+  height: 120vw
+  flex-direction: column
+
+  .graphart
+   width: 100%
+   height: 60vw
+
+  .coding
+   width: 100%
+   height: 60vw
+
+  .title
+   font:
+    weight: bold
+    size: 5.882352941176470588235294117647vw
+   margin-bottom: 0px
+   display: block
+   line-height: 8.2058823529411764705882352941176vw
+
+  .title2
+   font:
+    weight: 600
+    size: 5.1470588235294117647058823529412vw
+   margin-bottom: 0px
+   line-height: 2.2058823529411764705882352941176vw
+
+  .videoedit
+   display: block
+   margin: 0px 10px
+   margin-bottom: 2.2058823529411764705882352941176vw
+
+  .designing
+   display: block
+   margin: 0px 10px
+
+  li
+   line-height: 3.6764705882352941176470588235294vw
+   font-size: 3.6764705882352941176470588235294vw
