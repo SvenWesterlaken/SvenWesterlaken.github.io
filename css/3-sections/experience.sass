@@ -1,0 +1,229 @@
+section.experience
+ height: auto
+ width: 100%
+ background: white
+
+ .overview
+  width: 100%
+  height: 100px
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+
+  .cbar, .vebar, .gdbar
+   padding: 0px 10px
+   display: block
+   text-align: left
+   margin: auto
+
+   span
+    font-size: 25px
+    font-weight: bold
+    margin-left: 5px
+    text-transform: uppercase
+    color: black
+
+   .xpbar
+    width: 300px
+    height: 20px
+    position: relative
+
+    &::before
+     content: ''
+     position: absolute
+     background-color: $xp
+     top: 0px
+     left: 0px
+     width: 0%
+     height: 100%
+     border-radius: 10px
+     z-index: 1
+
+    &::after
+     content: ''
+     position: absolute
+     background-color: $xpbar
+     top: 0px
+     left: 0px
+     width: 100%
+     height: 100%
+     border-radius: 10px
+
+   #graphic.shown
+    &::before
+     width: 95%
+
+   #video.shown
+    &::before
+     width: 80%
+
+   #coding.shown
+    &::before
+     width: 75%
+
+ .buttoncontainer
+  width: 100%
+  height: auto
+  text-align: center
+  padding: 10px 0px
+
+  button
+   background-color: white
+   padding: 3px 30px
+   outline: 0
+   color: $xp
+   font-size: 20px
+   text-transform: uppercase
+   font-weight: bold
+   border: 1px solid $xp
+   border-radius: 12.5px
+   cursor: pointer
+   transition: all 0.3s ease-in-out
+
+   &:hover, &:active
+    background-color: $xp
+    color: white
+    outline: 0
+
+ .indepth
+  height: 260px
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $background
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3) inset, 0px -5px 5px 0px rgba(0,0,0,0.3) inset
+
+  .indepthcolumn
+   margin: 0px 10px
+   display: block
+   text-align: left
+
+   span
+    color: white
+    font-size: 25px
+    text-transform: uppercase
+    font-weight: bold
+    line-height: 0px
+
+   .xpbarscont
+    span
+     font-size: 15px
+     margin-left: 2px
+
+    .xpbar
+     width: 160px
+     height: 15px
+     position: relative
+     margin-bottom: 5px
+
+     &::before
+      content: ''
+      position: absolute
+      background-color: $xp
+      top: 0px
+      left: 0px
+      width: 0%
+      height: 100%
+      border-radius: 10px
+      z-index: 1
+      transition: all 1.5s ease-in-out
+
+     &::after
+      content: ''
+      position: absolute
+      background-color: $xpbar2
+      top: 0px
+      left: 0px
+      width: 100%
+      height: 100%
+      border-radius: 10px
+
+    //graphics
+
+    #logo.shown
+      &::before
+       width: 90%
+
+    #branding.shown
+      &::before
+       width: 80%
+
+    #tlb.shown
+      &::before
+       width: 65%
+
+    #websitedesign.shown
+      &::before
+       width: 70%
+
+    #lowpoly.shown
+      &::before
+       width: 60%
+
+    //videoediting
+
+    #compilations.shown
+      &::before
+       width: 95%
+
+    #audiospec.shown
+      &::before
+       width: 90%
+
+    #eandc.shown
+      &::before
+       width: 80%
+
+    #intro.shown
+      &::before
+       width: 70%
+
+    #tintro.shown
+      &::before
+       width: 50%
+
+    //coding
+
+    #html.shown
+      &::before
+       width: 80%
+
+    #css.shown
+      &::before
+       width: 80%
+
+    #js.shown
+      &::before
+       width: 30%
+
+    #jade.shown
+      &::before
+       width: 70%
+
+    #sass.shown
+      &::before
+       width: 90%
+
+    //programs
+
+    #phs.shown
+      &::before
+       width: 95%
+
+    #illu.shown
+      &::before
+       width: 20%
+
+    #cin4d.shown
+      &::before
+       width: 65%
+
+    #ae.shown
+      &::before
+       width: 70%
+
+    #sv.shown
+      &::before
+       width: 80%
