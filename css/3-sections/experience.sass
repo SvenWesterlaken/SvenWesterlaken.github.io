@@ -39,6 +39,7 @@ section.experience
      height: 100%
      border-radius: 10px
      z-index: 1
+     transition: all 2s ease-in-out
 
     &::after
      content: ''
@@ -58,7 +59,7 @@ section.experience
     &::before
      width: 80%
 
-   #coding.shown
+   #code.shown
     &::before
      width: 75%
 
@@ -92,7 +93,10 @@ section.experience
   display: flex
   justify-content: center
   align-items: center
-  background-color: $background
+  /* Background pattern from subtlepatterns.com */
+  background:
+   image: url(/img/texture.png)
+   size: 500px 500px
   box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3) inset, 0px -5px 5px 0px rgba(0,0,0,0.3) inset
 
   .indepthcolumn
@@ -196,7 +200,7 @@ section.experience
 
     #js.shown
       &::before
-       width: 30%
+       width: 45%
 
     #jade.shown
       &::before

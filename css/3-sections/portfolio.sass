@@ -1,0 +1,144 @@
+section.portfolio
+ height: auto
+ width: auto
+ background: $footer
+
+ .portfoliogrid
+  width: 1080px
+  margin: auto
+  /* Background pattern from subtlepatterns.com */
+  background:
+   image: url(/img/texture.png)
+   size: 500px 500px
+  box-shadow: 2px 0px 6px 0px rgba(0, 0, 0, 0.15), -2px 0px 6px 0px rgba(0, 0, 0, 0.15)
+
+  .col-1
+   height: 180px
+   width: 360px
+   background: purple
+
+   img
+    height: 180px
+    width: 360px
+
+  .col-2
+   height: 180px
+   width: 180px
+   background: #356232
+
+   img
+    height: 180px
+    width: 180px
+
+  .col-3
+   height: 360px
+   width: 360px
+   background: aqua
+
+   img
+    height: 360px
+    width: 360px
+
+  .col-4
+   height: 360px
+   width: 180px
+   background: yellow
+
+   img
+    height: 360px
+    width: 180px
+
+  .griditem
+   overflow: hidden
+   position: relative
+
+   img
+    transition: all 0.25s ease-in-out
+
+   figcaption
+    height: auto
+    position: absolute
+    transition: all 0.25s ease-in-out
+    top: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(20,20,20,0.95)
+    opacity: 0
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .imglink-con
+     border: 1px solid rgba(0,0,0,0)
+     padding: 5px
+     transition: all 0.3s ease-in-out
+
+     &:hover,&:active
+      border: 1px solid $xp
+      a
+       color: $xp
+
+     a
+      font-size: 20px
+      color: white
+      text-transform: uppercase
+      font-weight: bold
+      line-height: 0.9em
+      transition: all 0.3s ease-in-out
+
+
+
+
+
+
+   &:hover, &:active
+    img
+     transform: scale(1.1)
+
+    figcaption
+     opacity: 1
+
+  .bdy
+   text-align: center
+   display: flex
+   justify-content: center
+   align-items: center
+   background: $linkbg
+
+   a
+    font-size: 30px
+    text-transform: uppercase
+    font-weight: bold
+    line-height: 0.9em
+    color: white
+    border: 1px solid $linkbg
+    padding: 5px
+    transition: all 0.3s ease-in-out
+
+    &:hover,&:active
+     &#behance
+      color: #1769ff
+      border: 1px solid #1769ff
+     &#dribble
+      color: #ea4c89
+      border: 1px solid #ea4c89
+     &#youtube
+      color: #cd201f
+      border: 1px solid #cd201f
+
+@media (max-width: 1080px)
+ section.portfolio
+  .portfoliogrid
+   width: 720px
+
+@media (max-width: 720px)
+ section.portfolio
+  .portfoliogrid
+   width: 540px
+
+@media (max-width: 540px)
+ section.portfolio
+  .portfoliogrid
+   width: 360px

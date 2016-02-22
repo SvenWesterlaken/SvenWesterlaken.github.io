@@ -10,7 +10,7 @@ header.header
   margin: 0
   padding: 100px 0px
   padding-bottom: 75px
-  width: 100%
+  width: auto
   height: auto
   text-align: center
   display: flex
@@ -24,17 +24,36 @@ header.header
   .firstline,
   .secondline,
   .thirdline,
-    margin: 0px 0px
-    padding: 0px
     width: auto
     height: auto
-    display: block
     z-index: 5
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+
+    span
+      font-size: 55px
+      font-weight: 600
+      color: white
+      text-transform: uppercase
+      display: inline
+      z-index: 5
+
+    img
+      display: inline
+      height: 40px
+      width: auto
+      margin: 0
+      padding: 0 5px
+
+  .firstline
 
     .text-img-header
       margin-right: 10px
       display: inline
 
+  .secondline
     .line
      height: 5px
      width: 800px
@@ -66,22 +85,6 @@ header.header
         position: absolute
         top: 5px
         left: 0px
-
-
-    span
-      font-size: 55px
-      font-weight: 600
-      color: white
-      text-transform: uppercase
-      display: inline
-      z-index: 5
-
-    img
-      display: inline
-      height: 40px
-      width: auto
-      margin: 0
-      padding: 0 5px
 
  .mathbackground
   opacity: 0.3
