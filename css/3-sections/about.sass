@@ -21,8 +21,6 @@ section.about
   height: auto
   color: white
   overflow: hidden
-  transform: translateX(0px)
-  transition: all 0.3s cubic-bezier(0.165, 0.755, 0.870, 0.595)
   display: flex
   align-items: center
   justify-content: center
@@ -99,28 +97,42 @@ section.about
 
      &:hover,&:active
       border: 1px solid #ff3232
-
      a
       color: #ff3232
 
     &#pffb
-
      &:hover,&:active
       border: 1px solid #3b5998
-
      a
       color: #3b5998
-
     &#em
-
      &:hover,&:active
       border: 1px solid $xp
-
      a
       color: $xp
-
 
     a
      font-size: 17px
      font-weight: bold
      text-transform: lowercase
+
+@media (max-width: 950px)
+ section.about .more p
+  font-size: 15px
+  .biggermore
+   font-size: 17px
+  .pictureme
+   height: 80px
+   width: 80px
+ .spancontainer span.link
+  font-size: 15px
+
+
+
+@media (max-width: 860px)
+ section.about article.about
+  font-size: 17px
+
+@media (max-width: 860px)
+ section.about .more .pictureme
+  margin-right: 10px
